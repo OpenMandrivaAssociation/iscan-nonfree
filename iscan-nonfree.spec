@@ -19,6 +19,11 @@ Source2:        epkowa.conf
 Source100:	%{name}.rpmlintrc
 # PATCH-FIX-UPSTREAM libpng15.patch (export from arch) -- Build iscan against libpng15 by giovanni
 Patch0:         libpng15.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gettext
 BuildRequires:  jpeg-devel
 BuildRequires:  libtool
